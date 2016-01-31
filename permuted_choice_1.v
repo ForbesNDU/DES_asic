@@ -1,0 +1,64 @@
+module permuted_choice_1(in_block, out_block_left, out_block_right);
+
+	input [63:0] in_block;
+	output [27:0] out_block_left, out_block_right;
+
+	assign out_block_left[0] = in_block[56];
+        assign out_block_left[1] = in_block[48];
+        assign out_block_left[2] = in_block[40];
+        assign out_block_left[3] = in_block[32];
+        assign out_block_left[4] = in_block[24];
+        assign out_block_left[5] = in_block[16];
+        assign out_block_left[6] = in_block[8];
+        assign out_block_left[7] = in_block[0];
+        assign out_block_left[8] = in_block[57];
+        assign out_block_left[9] = in_block[49];
+        assign out_block_left[10] = in_block[41];
+        assign out_block_left[11] = in_block[33];
+        assign out_block_left[12] = in_block[25];
+        assign out_block_left[13] = in_block[17];
+        assign out_block_left[14] = in_block[9];
+        assign out_block_left[15] = in_block[1];
+        assign out_block_left[16] = in_block[58];
+        assign out_block_left[17] = in_block[50];
+        assign out_block_left[18] = in_block[42];
+        assign out_block_left[19] = in_block[34];
+        assign out_block_left[20] = in_block[26];
+        assign out_block_left[21] = in_block[18];
+        assign out_block_left[22] = in_block[10];
+        assign out_block_left[23] = in_block[2];
+        assign out_block_left[24] = in_block[59];
+        assign out_block_left[25] = in_block[51];
+        assign out_block_left[26] = in_block[43];
+        assign out_block_left[27] = in_block[35];
+
+	assign out_block_right[0] = in_block[62];
+        assign out_block_right[1] = in_block[54];
+        assign out_block_right[2] = in_block[46];
+        assign out_block_right[3] = in_block[38];
+        assign out_block_right[4] = in_block[30];
+        assign out_block_right[5] = in_block[22];
+        assign out_block_right[6] = in_block[14];
+        assign out_block_right[7] = in_block[6];
+        assign out_block_right[8] = in_block[61];
+        assign out_block_right[9] = in_block[53];
+        assign out_block_right[10] = in_block[45];
+        assign out_block_right[11] = in_block[37];
+        assign out_block_right[12] = in_block[29];
+        assign out_block_right[13] = in_block[21];
+        assign out_block_right[14] = in_block[13];
+        assign out_block_right[15] = in_block[5];
+        assign out_block_right[16] = in_block[60];
+        assign out_block_right[17] = in_block[52];
+        assign out_block_right[18] = in_block[44];
+        assign out_block_right[19] = in_block[36];
+        assign out_block_right[20] = in_block[28];
+        assign out_block_right[21] = in_block[20];
+        assign out_block_right[22] = in_block[12];
+        assign out_block_right[23] = in_block[4];
+        assign out_block_right[24] = in_block[27];
+        assign out_block_right[25] = in_block[19];
+        assign out_block_right[26] = in_block[11];
+        assign out_block_right[27] = in_block[3];
+
+endmodule
